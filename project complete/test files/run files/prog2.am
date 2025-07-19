@@ -1,0 +1,26 @@
+.entry LOOP
+MAIN:	prn #16
+	add #6, r6
+	sub #6, r6
+LOOP:	prn #1
+	prn #2
+	prn #3
+.extern L3
+	add #1, r1
+	rts
+	sub #3, NUM
+	cmp r1, r2
+	bne LOOP
+	prn STR
+	stop
+STR:	.string "abcd"
+NUM:	.data 1,2,3,4,5
+K:	lea MAIN, r0
+	add r0, L3
+	sub r1, K
+	add r2, K
+	sub r3, r2
+	add r4, r1
+	dec r5
+	inc r6
+	dec r7
