@@ -1,5 +1,5 @@
 # op-uni
-Project for the open university.
+Project for a course of the open university.
 The project was to make the initial part of an assembler for the "assembly" coding language.
 
 Summery: the assembler recieves a text file of what is assumed to be code made in "assembly". The assembler takes that file as input and outputs a file with summerized data ready for further incoding into binary.
